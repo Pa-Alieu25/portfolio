@@ -175,11 +175,11 @@ export const profile = {
     items: [
       { title: "Mastercard Foundation Scholar", detail: "KNUST · 2024", description: "A competitive scholarship for academically strong African students with leadership potential." },
       { title: "Most Valuable Player", detail: "ISA Inter-Year Sports · KNUST", description: "" },
-      { title: "Basketball", detail: "Gambia U21 National Basketball Team · KNUST school team player", description: "" },
+      { title: "Basketball", detail: "Gambia U21 National Basketball Team · KNUST team player", description: "" },
     ],
   },
   security: {
-    text: "I’m developing my cybersecurity foundations alongside software engineering: learning the basics of nmap, Wireshark and system hardening, and working through introductory security study.",
+    text: "I’m developing my cybersecurity foundations alongside software engineering: learning nmap, Wireshark and system hardening, and working through introductory security study.",
     certifications: [
       { name: "Introduction to Cybersecurity", provider: "Cisco NetAcad", status: "In progress" },
       { name: "Google Cybersecurity Professional Certificate", provider: "Google", status: "Planned" },
@@ -302,11 +302,10 @@ export const resume = {
   achievements: [
     "Mastercard Foundation Scholar, KNUST (2024): competitive scholarship recognising academic strength and leadership potential.",
     "Most Valuable Player, ISA Inter-Year Sports, KNUST.",
-    "Gambia U21 National Basketball Team; KNUST school team player.",
+    "Gambia U21 National Basketball Team; KNUST team player.",
   ],
   certifications: [
     "Cisco NetAcad: Introduction to Cybersecurity - in progress.",
-    "Udemy: PHP course - in progress.",
     "Google Cybersecurity Professional Certificate - planned.",
   ],
   languages: profile.about.languages,
