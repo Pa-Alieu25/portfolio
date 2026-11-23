@@ -121,7 +121,7 @@ export function Portfolio() {
 
         <Section id="contact" heading={sections.contact} className="contact-section">
           <a className="contact-email" href={`mailto:${profile.contact.email}`}>{profile.contact.email}</a>
-          <div className="contact-links"><a href={profile.contact.linkedin} target="_blank" rel="noreferrer">{ui.linkedin}</a><a href={profile.contact.github} target="_blank" rel="noreferrer">{ui.github}</a></div>
+          <div className="contact-links"><a href={profile.contact.linkedin} target="_blank" rel="noreferrer">{ui.linkedin}</a><a href={profile.contact.github} target="_blank" rel="noreferrer">{ui.github}</a><a href={profile.cvPage}>{ui.cv}</a></div>
         </Section>
       </main>
       <footer className="shell site-footer"><div><Signature /><span>{profile.name}</span><span className="footer-note">{ui.footerNote}</span></div><a href="#top">{ui.backToTop}</a></footer>

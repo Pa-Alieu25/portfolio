@@ -1,3 +1,5 @@
+const coursework = ["Data Structures & Algorithms", "Operations Research", "Human-Computer Interaction", "Web-Based Concepts & Development", "Introduction to AI", "Survey of Programming Languages"];
+
 /** Public content only. Keep application-only contact details and research outside this repo. */
 export const profile = {
   name: "Pa Alieu Njie",
@@ -5,7 +7,7 @@ export const profile = {
   headline: "Software Engineer building mobile apps and full-stack systems",
   hero: {
     headlineAccent: "mobile apps",
-    introduction: "I work across mobile, frontend and backend, with a growing focus on cybersecurity. I’m studying Computer Science at KNUST and building software around practical, everyday problems.",
+    introduction: "I work across mobile, frontend and backend, with a growing focus on cybersecurity. I’m studying Computer Science at KNUST and building software for real problems in The Gambia and Ghana, from fleet management to ride-hailing.",
     location: "From The Gambia · Based in Kumasi, Ghana",
     availability: "Open to remote roles",
     noteLabel: "personal note",
@@ -21,6 +23,7 @@ export const profile = {
   cv: { href: "/Pa_Alieu_Njie_CV.pdf", label: "Download CV" } as null | { href: string; label: string },
   // Stable Vercel production origin (no trailing slash). Drives canonical URLs, the sitemap and the web CV link.
   siteUrl: "https://pa-alieu-njie.vercel.app" as string | null,
+  cvPage: "/cv",
   seo: {
     title: "Pa Alieu Njie — Software Engineer",
     description: "Pa Alieu Njie builds mobile apps and full-stack systems. Computer Science student at KNUST, from The Gambia and based in Kumasi, Ghana. Open to remote roles.",
@@ -53,6 +56,7 @@ export const profile = {
     email: "Email",
     linkedin: "LinkedIn",
     github: "GitHub",
+    cv: "CV",
     backToTop: "Back to top",
     footerNote: "From The Gambia. Building with care.",
     notFoundTitle: "Page not found.",
@@ -60,10 +64,10 @@ export const profile = {
     returnHome: "Back to the portfolio",
   },
   sections: {
-    experience: { label: "Internship experience", title: "Building for a real workflow.", description: "An assigned system, shaped by the people who would use it." },
+    experience: { label: "Internship experience", title: "Building for a real workflow.", description: "A full system, shaped by the people who would use it." },
     featured: { label: "Featured projects", title: "Mobile first. Built with purpose.", description: "The work, the context, and where I contributed." },
     team: { label: "Team projects", title: "Making room for good teamwork." },
-    progress: { label: "In progress", title: "What I’m working toward.", description: "A platform foundation and an idea I’m still refining. Their current stages matter." },
+    progress: { label: "In progress", title: "What I’m working toward.", description: "A platform foundation and an idea I’m still refining." },
     skills: { label: "Skills", title: "Across the stack." },
     leadership: { label: "Leadership & achievements", title: "Beyond the code." },
     security: { label: "Cybersecurity journey", title: "Learning to build more securely.", description: "A growing focus, grounded in current study and the basics." },
@@ -77,15 +81,15 @@ export const profile = {
     dates: "Sep 2026 – Oct 2026",
     project: "FleetOps",
     context: "Port operations services at the Port of Banjul: container scanning, weighbridge and e-tracking.",
-    summary: "My manager assigned me a fleet-management system. I built an Expo driver app and a Laravel/Filament admin system backed by MySQL.",
+    summary: "I built FleetOps, a fleet-management system for the company: an Expo driver app and a Laravel/Filament admin panel backed by MySQL.",
     bullets: [
       "Built driver registration and login, trip tracking with approved routes, and vehicle registration.",
       "Added fuel requests with finance approval and cash or coupon disbursement, plus maintenance reminders by date or mileage and HR notifications.",
-      "Included a purpose dropdown for drivers who don’t read English.",
+      "Designed a purpose dropdown so drivers with limited English can log trips without typing.",
       "Presented progress to management three times and added features from their feedback. Handed the system to the company’s IT team for deployment.",
     ],
     stack: ["React Native", "Expo", "Laravel", "Filament", "MySQL"],
-    note: "Company-owned internship work.",
+    note: "The code belongs to the company, so it isn’t public.",
   },
   featured: [
     {
@@ -102,7 +106,7 @@ export const profile = {
       details: [
         "Designed the student dashboard and UI foundation, and implemented assignment and timetable document upload/download workflows.",
         "Added CSV/XLS/XLSX score uploads, offline exam-venue search, caching, and role restrictions using Spring Security/JWT.",
-        "Payment/subscription functionality is demo-level. The project is not presented as a deployed production service.",
+        "Payments are demo-level; it isn’t deployed as a live service.",
       ],
       // Omitted: live public opening could not be verified in this environment.
       links: [] as { label: string; href: string }[],
@@ -120,7 +124,7 @@ export const profile = {
       stack: ["React Native", "Expo", "TypeScript", "Firebase", "NativeWind"],
       details: [
         "The original implementation includes real-time report lists, onboarding, report-detail views, photo uploads through Cloudinary, and maps using Leaflet/OpenStreetMap.",
-        "Localisation work includes Gambian copy, map framing, local-government areas and report categories. This is not a launched public service or government integration.",
+        "Localisation work includes Gambian copy, map framing, local-government areas and report categories. Not yet launched publicly.",
       ],
       links: [] as { label: string; href: string }[],
     },
@@ -143,7 +147,7 @@ export const profile = {
       status: "Foundation in development",
       summary: "A ride-hailing platform foundation for The Gambia.",
       detail: "I’m building passenger and driver app shells, an admin shell, API connectivity, a generated typed client and shared money utilities. PostgreSQL/Flyway setup enables PostGIS.",
-      boundary: "Ride matching, booking, dispatch and payments are not complete. The admin currently uses stub authentication.",
+      boundary: "Next: ride matching, booking, dispatch and payments.",
       stack: ["Expo", "TypeScript", "React", "Spring Boot", "PostgreSQL / PostGIS"],
     },
     {
@@ -152,7 +156,7 @@ export const profile = {
       status: "Early concept",
       summary: "Connecting households and landlords with local tradespeople.",
       detail: "I’m refining a mobile marketplace concept for The Gambia. The plan is to help households and landlords find local tradespeople and request quotes.",
-      boundary: "These are planned capabilities. There is no implemented product or live demo yet.",
+      boundary: "Concept stage: no build yet.",
       stack: [] as string[],
     },
   ],
@@ -160,7 +164,7 @@ export const profile = {
     { name: "Mobile & frontend", items: ["React Native / Expo", "React", "Next.js", "JavaScript / TypeScript"] },
     { name: "Backend & data", items: ["PHP / Laravel / Filament", "Java / Spring Boot", "Node.js / Express", "MySQL", "PostgreSQL / PostGIS", "Firebase"] },
     { name: "Delivery & collaboration", items: ["Git / GitHub", "GitHub Actions CI", "Docker", "Code review"] },
-    { name: "Foundations & learning", items: ["Python basics", "C++ basics", "nmap / Wireshark basics", "System hardening basics"] },
+    { name: "Foundations & learning", items: ["Python", "C++", "nmap / Wireshark", "System hardening"] },
   ],
   leadership: [
     { title: "Vice President", organization: "National Association of Gambian Students in Ghana (NAGSTUG)", dates: "2025 – 2026", description: "Represented and coordinated welfare, academic and cultural matters for Gambian students across Ghana." },
@@ -178,14 +182,13 @@ export const profile = {
     text: "I’m developing my cybersecurity foundations alongside software engineering: learning the basics of nmap, Wireshark and system hardening, and working through introductory security study.",
     certifications: [
       { name: "Introduction to Cybersecurity", provider: "Cisco NetAcad", status: "In progress" },
-      { name: "PHP course", provider: "Udemy", status: "In progress" },
-      { name: "Google Cybersecurity Professional Certificate", provider: "Google", status: "Planned · Financial aid applied" },
+      { name: "Google Cybersecurity Professional Certificate", provider: "Google", status: "Planned" },
     ],
   },
   about: {
     paragraphs: [
-      "I’m from The Gambia and based in Kumasi, Ghana, where I’m in my third year of Computer Science at KNUST. A Mastercard Foundation scholarship is part of that journey.",
-      "Outside software, basketball is a big part of my life. I’ve been part of the Gambia U21 National Basketball Team and play for the KNUST school team. My approach to learning is simple: 1% better every day.",
+      "I’m from The Gambia and based in Kumasi, Ghana, where I’m in my third year of Computer Science at KNUST. I’m a Mastercard Foundation Scholar.",
+      "Outside software, basketball is a big part of my life. I’ve been part of the Gambia U21 National Basketball Team and play for the KNUST team. My approach to learning is simple: 1% better every day.",
     ],
     languagesLabel: "Languages",
     languages: ["English", "Wolof", "Mandinka", "Fula"],
@@ -194,7 +197,7 @@ export const profile = {
       { title: "BSc Computer Science", institution: "Kwame Nkrumah University of Science and Technology (KNUST)", dates: "Jan 2025 – 2028 (expected)", note: "Third year · Kumasi, Ghana" },
       { title: "Charles Jow Memorial Academy", institution: "The Gambia", dates: "Completed 2021", note: "" },
     ],
-    coursework: ["Data Structures & Algorithms", "Operations Research", "Human-Computer Interaction", "Web-Based Concepts & Development", "Introduction to AI", "Survey of Programming Languages"],
+    coursework: [...coursework, "Udemy PHP course (in progress)"],
     courseworkLabel: "Relevant coursework",
   },
 } as const;
@@ -232,7 +235,7 @@ export const resume = {
     { label: "Mobile & frontend", text: "React Native/Expo, React, Next.js, JavaScript/TypeScript" },
     { label: "Backend & data", text: "PHP/Laravel/Filament, Java/Spring Boot, Node.js/Express, SQL, MySQL, PostgreSQL/PostGIS, Firebase" },
     { label: "Tools", text: "Docker, Git/GitHub, GitHub Actions CI, code review" },
-    { label: "Foundations", text: "Python and C++ basics; nmap, Wireshark and system hardening basics" },
+    { label: "Foundations", text: "Python, C++, nmap, Wireshark, system hardening" },
   ],
   experience: {
     company: profile.experience.company,
@@ -242,7 +245,7 @@ export const resume = {
     context: "Port operations services at the Port of Banjul.",
     bullets: [
       "Built FleetOps: an Expo driver app and Laravel/Filament admin system with MySQL, covering driver authentication, approved-route trip tracking and vehicle registration.",
-      "Added finance-approved fuel requests with cash/coupon disbursement, date/mileage maintenance reminders, HR notifications and a purpose dropdown for drivers who do not read English.",
+      "Added finance-approved fuel requests with cash/coupon disbursement, date/mileage maintenance reminders, HR notifications and a purpose dropdown so drivers with limited English can log trips without typing.",
       "Presented progress to management three times, incorporated their feedback and handed the system to the company's IT team for deployment.",
     ],
   },
@@ -257,7 +260,7 @@ export const resume = {
       name: "ReportIt Gambia",
       role: "Original implementation; adaptation in progress",
       stack: "React Native/Expo, TypeScript, Firebase, NativeWind, Cloudinary",
-      summary: "Implemented the original student mini-project app: authentication, photo/GPS reports, maps, status timelines, admin triage and local notifications. Now adapting the foundation for The Gambia; the adaptation is not a launched public service.",
+      summary: "Implemented the original student mini-project app: authentication, photo/GPS reports, maps, status timelines, admin triage and local notifications. Now adapting the foundation for The Gambia; not yet launched publicly.",
     },
   ],
   inProgress: [
@@ -265,13 +268,13 @@ export const resume = {
       name: "TaksiGambia",
       role: "Solo developer - in progress",
       stack: "Expo/TypeScript, React/Vite, Java/Spring Boot, PostgreSQL/PostGIS, Docker",
-      summary: "Building passenger/driver and admin app shells, API connectivity, generated typed clients and money utilities. Database setup enables PostGIS. Ride matching, booking, dispatch and payments are not complete.",
+      summary: "Building passenger/driver and admin app shells, API connectivity, generated typed clients and money utilities. Database setup enables PostGIS. Next: ride matching, booking, dispatch and payments.",
     },
     {
       name: "Am Am Gambia",
       role: "Creator - early concept",
       stack: "",
-      summary: "Refining a mobile marketplace concept for Gambian households and landlords to find local tradespeople and request quotes. These are planned capabilities; there is no implemented product or live demo yet.",
+      summary: "Refining a mobile marketplace concept for Gambian households and landlords to find local tradespeople and request quotes. Concept stage: no build yet.",
     },
   ],
   leadership: [
@@ -295,7 +298,7 @@ export const resume = {
     { title: "BSc Computer Science", institution: "Kwame Nkrumah University of Science and Technology (KNUST), Kumasi, Ghana", dates: "Jan 2025 - 2028 (expected)", note: "Currently in third year." },
     { title: "Charles Jow Memorial Academy", institution: "The Gambia", dates: "Completed 2021", note: "" },
   ],
-  coursework: profile.about.coursework,
+  coursework,
   achievements: [
     "Mastercard Foundation Scholar, KNUST (2024): competitive scholarship recognising academic strength and leadership potential.",
     "Most Valuable Player, ISA Inter-Year Sports, KNUST.",
@@ -304,7 +307,7 @@ export const resume = {
   certifications: [
     "Cisco NetAcad: Introduction to Cybersecurity - in progress.",
     "Udemy: PHP course - in progress.",
-    "Google Cybersecurity Professional Certificate - planned; financial aid applied.",
+    "Google Cybersecurity Professional Certificate - planned.",
   ],
   languages: profile.about.languages,
 } as const;

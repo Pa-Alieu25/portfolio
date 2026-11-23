@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 // Phase 4: the only approved public PDF, pinned to the text-verified export.
-const approvedCv = { path: join("public", "Pa_Alieu_Njie_CV.pdf"), href: "/Pa_Alieu_Njie_CV.pdf", sha256: "402f38a9fa3140a5cbfd706b21a37fa755b1e3ad95c110e2454f1926f08f4918" };
+const approvedCv = { path: join("public", "Pa_Alieu_Njie_CV.pdf"), href: "/Pa_Alieu_Njie_CV.pdf", sha256: "eef8c98bdc86dcd0e5b5093480f3bb1510e4d028bef50dc5a103a9cac65872f9" };
 const sourceExtensions = /\.(?:tsx?|jsx?|json|md|html|svg|css|txt|xml)$/i;
 const allowedGitHubUrls = new Set([
   "https://github.com/Pa-Alieu25",
