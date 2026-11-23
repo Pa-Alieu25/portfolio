@@ -20,7 +20,7 @@ export const profile = {
   // Public CV PDF exported and text-verified in Phase 4 (no phone number).
   cv: { href: "/Pa_Alieu_Njie_CV.pdf", label: "Download CV" } as null | { href: string; label: string },
   // Stable Vercel production origin (no trailing slash). Drives canonical URLs, the sitemap and the web CV link.
-  siteUrl: "https://portfolio-ten-xi-ax6n7kgafo.vercel.app" as string | null,
+  siteUrl: "https://pa-alieu-njie.vercel.app" as string | null,
   seo: {
     title: "Pa Alieu Njie — Software Engineer",
     description: "Pa Alieu Njie builds mobile apps and full-stack systems. Computer Science student at KNUST, from The Gambia and based in Kumasi, Ghana. Open to remote roles.",
