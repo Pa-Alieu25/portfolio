@@ -83,4 +83,6 @@
 @media screen and (max-width: 600px) {
   .cv-contact p + p { margin-top: 4px; }
   .cv-contact a { min-height: 44px; padding-block: 11px; }
+  .cv-contact .cv-site-sep { display: none; }
+  .cv-contact .cv-site-link { display: block; width: fit-content; }
 }

@@ -15,7 +15,7 @@ export function CvDocument({ applicationContact }: { applicationContact?: string
         <div className="cv-contact">
           <p><a href={`mailto:${profile.contact.email}`}>{profile.contact.email}</a>{applicationContact && <span> · {applicationContact}</span>}</p>
           <p><a href={profile.contact.linkedin}>{resume.labels.linkedin}</a></p>
-          <p><a href={profile.contact.github}>{resume.labels.github}</a>{profile.siteUrl && <><span> · </span><a href={profile.siteUrl}>{profile.siteUrl.replace(/^https?:\/\//, "")}</a></>}</p>
+          <p><a href={profile.contact.github}>{resume.labels.github}</a>{profile.siteUrl && <><span className="cv-site-sep"> · </span><a className="cv-site-link" href={profile.siteUrl}>{profile.siteUrl.replace(/^https?:\/\//, "")}</a></>}</p>
         </div>
         <p className="cv-location">{resume.location}</p>
       </header>
