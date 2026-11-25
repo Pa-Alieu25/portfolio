@@ -174,7 +174,7 @@ export const profile = {
   achievements: {
     title: "A few things I’m proud of",
     items: [
-      { title: "Mastercard Foundation Scholar", detail: "KNUST · 2024", description: "A competitive scholarship for academically strong African students with leadership potential." },
+      { title: "Mastercard Foundation Scholar", detail: "KNUST · January 2025", description: "A competitive scholarship for academically strong African students with leadership potential." },
       { title: "Most Valuable Player", detail: "ISA Inter-Year Sports · KNUST", description: "" },
       { title: "Basketball", detail: "Gambia U21 National Basketball Team · KNUST team player", description: "" },
     ],
@@ -302,7 +302,7 @@ export const resume = {
   ],
   coursework,
   achievements: [
-    "Mastercard Foundation Scholar, KNUST (2024): competitive scholarship recognising academic strength and leadership potential.",
+    "Mastercard Foundation Scholar, KNUST (January 2025): competitive scholarship recognising academic strength and leadership potential.",
     "Most Valuable Player, ISA Inter-Year Sports, KNUST.",
     "Gambia U21 National Basketball Team; KNUST team player.",
   ],
