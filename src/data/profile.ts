@@ -83,10 +83,11 @@ export const profile = {
     context: "Port operations services at the Port of Banjul: container scanning, weighbridge and e-tracking.",
     summary: "I built FleetOps, a fleet-management system for the company: an Expo driver app and a Laravel/Filament admin panel backed by MySQL.",
     bullets: [
-      "Built driver registration and login, trip tracking with approved routes, and vehicle registration.",
+      "Built driver sign-in, GPS trip tracking and vehicle management. HR registers drivers in the admin.",
       "Added fuel requests with finance approval and cash or coupon disbursement, plus maintenance reminders by date or mileage and HR notifications.",
-      "Designed a purpose dropdown so drivers with limited English can log trips without typing.",
+      "Designed picture buttons for trip purpose and destination so drivers with limited English can log trips without typing.",
       "Presented progress to management three times and added features from their feedback. Handed the system to the company’s IT team for deployment.",
+      "I continue to maintain FleetOps and add features for the company, part-time and remotely (2026 – present).",
     ],
     stack: ["React Native", "Expo", "Laravel", "Filament", "MySQL"],
     note: "The code belongs to the company, so it isn’t public.",
@@ -99,14 +100,14 @@ export const profile = {
       status: "Group project",
       summary: "One place for the academic updates that shape a student’s day.",
       problem: "Students and course representatives need to coordinate timetables, assignments, announcements, exam venues and scores — including when connectivity is unreliable.",
-      solution: "I was the primary contributor across the React Native frontend, Spring Boot backend and design decisions. My work included document workflows, bulk score uploads and offline access to previously loaded academic data.",
-      role: "Primary contributor · Mobile, backend & design",
-      credit: "Built as a group project with the ClassMate team.",
+      solution: "I was the primary contributor to the React Native app and extended the Spring Boot backend a teammate set up, including its JWT authentication. My work included document workflows, bulk score uploads and offline access to previously loaded academic data.",
+      role: "Primary contributor · Mobile app, backend features & design",
+      credit: "Built as a group project with the ClassMate team. A teammate set up the initial Spring Boot backend and JWT authentication.",
       stack: ["React Native", "Expo", "TypeScript", "Spring Boot", "PostgreSQL"],
       details: [
         "Designed the student dashboard and UI foundation, and implemented assignment and timetable document upload/download workflows.",
-        "Added CSV/XLS/XLSX score uploads, offline exam-venue search, caching, and role restrictions using Spring Security/JWT.",
-        "Payments are demo-level; it isn’t deployed as a live service.",
+        "Added CSV/XLS/XLSX score uploads, offline exam-venue search, caching, and hardened the role restrictions in Spring Security/JWT.",
+        "Payments are demo-level.",
       ],
       // Omitted: live public opening could not be verified in this environment.
       links: [] as { label: string; href: string }[],
@@ -162,7 +163,7 @@ export const profile = {
   ],
   skills: [
     { name: "Mobile & frontend", items: ["React Native / Expo", "React", "Next.js", "JavaScript / TypeScript"] },
-    { name: "Backend & data", items: ["PHP / Laravel / Filament", "Java / Spring Boot", "Node.js / Express", "MySQL", "PostgreSQL / PostGIS", "Firebase"] },
+    { name: "Backend & data", items: ["PHP / Laravel / Filament", "Java / Spring Boot", "MySQL", "PostgreSQL / PostGIS", "SQLite", "Firebase"] },
     { name: "Delivery & collaboration", items: ["Git / GitHub", "GitHub Actions CI", "Docker", "Code review"] },
     { name: "Foundations & learning", items: ["Python", "C++", "nmap / Wireshark", "System hardening"] },
   ],
@@ -233,7 +234,7 @@ export const resume = {
   },
   skillGroups: [
     { label: "Mobile & frontend", text: "React Native/Expo, React, Next.js, JavaScript/TypeScript" },
-    { label: "Backend & data", text: "PHP/Laravel/Filament, Java/Spring Boot, Node.js/Express, SQL, MySQL, PostgreSQL/PostGIS, Firebase" },
+    { label: "Backend & data", text: "PHP/Laravel/Filament, Java/Spring Boot, SQL, MySQL, PostgreSQL/PostGIS, SQLite, Firebase" },
     { label: "Tools", text: "Docker, Git/GitHub, GitHub Actions CI, code review" },
     { label: "Foundations", text: "Python, C++, nmap, Wireshark, system hardening" },
   ],
@@ -244,9 +245,10 @@ export const resume = {
     dates: "Sep 2026 - Oct 2026",
     context: "Port operations services at the Port of Banjul.",
     bullets: [
-      "Built FleetOps: an Expo driver app and Laravel/Filament admin system with MySQL, covering driver authentication, approved-route trip tracking and vehicle registration.",
-      "Added finance-approved fuel requests with cash/coupon disbursement, date/mileage maintenance reminders, HR notifications and a purpose dropdown so drivers with limited English can log trips without typing.",
+      "Built FleetOps: an Expo driver app and Laravel/Filament admin system with MySQL, covering driver sign-in, GPS trip tracking and vehicle management, with HR registering drivers in the admin.",
+      "Added finance-approved fuel requests with cash/coupon disbursement, date/mileage maintenance reminders, HR notifications and picture buttons for trip purpose and destination so drivers with limited English can log trips without typing.",
       "Presented progress to management three times, incorporated their feedback and handed the system to the company's IT team for deployment.",
+      "Continue to maintain FleetOps and add features part-time and remotely (2026 - present).",
     ],
   },
   featured: [
@@ -254,7 +256,7 @@ export const resume = {
       name: "KNUST ClassMate",
       role: "Group project - primary contributor",
       stack: "React Native/Expo, TypeScript, Java/Spring Boot, Spring Security/JWT, PostgreSQL",
-      summary: "Primary contributor across mobile frontend, backend and design decisions; credit shared with the ClassMate team. Built assignment/timetable document workflows, CSV/XLS/XLSX score uploads, offline exam-venue search and academic-data caching.",
+      summary: "Primary contributor to the mobile app; extended the Spring Boot backend and JWT authentication a teammate set up; credit shared with the ClassMate team. Built assignment/timetable document workflows, CSV/XLS/XLSX score uploads, offline exam-venue search and academic-data caching.",
     },
     {
       name: "ReportIt Gambia",
