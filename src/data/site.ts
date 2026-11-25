@@ -109,7 +109,7 @@ export const site = {
     eyebrow: "Projects",
     title: "Built, being built, and planned. Labelled honestly.",
     projects: [
-      { slug: "classmate", name: "KNUST ClassMate", meta: "Group project · Jun–Jul 2026", text: "Timetables, assignments, exam venues and scores for students and course reps. I built most of the app and co-built the Spring Boot backend.", status: "completed" },
+      { slug: "classmate", name: "KNUST ClassMate", meta: "Group project · Jun–Jul 2026", text: "Timetables, assignments, exam venues and scores for students and course reps. I built most of the app and co-built the Spring Boot backend with Maxwell (GitHub: Kobimcs).", status: "completed" },
       { slug: "reportit", name: "ReportIt Gambia", meta: "Started as a two-person project · now mine", text: "Report a pothole, a leak or flooding with a photo and location, then follow it until it’s fixed.", status: "prototype" },
       { slug: "taksigambia", name: "TaksiGambia", meta: "Solo · Jul 2026–now", text: "Ride-hailing built around landmarks, cash and a commission drivers can see. Foundations and safety checks are built; ride features come next.", status: "development" },
     ] satisfies { slug: ProjectSlug; name: string; meta: string; text: string; status: StatusKind }[],

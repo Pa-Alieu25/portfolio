@@ -165,7 +165,7 @@ const classmate: CaseStudy = {
   name: "KNUST ClassMate",
   kind: "Group project · KNUST",
   lede: "A mobile app for KNUST students and course reps: timetables, announcements, assignments with documents, exam-venue search by index number, midsem scores and class reminders. Data you have loaded stays available offline.",
-  seoDescription: "KNUST ClassMate: a group-built academic coordination app. Pa Alieu Njie built most of the React Native app and co-built the Spring Boot backend: JWT roles, offline cache, bulk score uploads and push notifications.",
+  seoDescription: "KNUST ClassMate: a group-built academic coordination app. Pa Alieu Njie built most of the React Native app and co-built the Spring Boot backend with Maxwell (GitHub: Kobimcs): JWT roles, offline cache, bulk score uploads and push notifications.",
   status: "completed",
   statusText: "Completed · payments demo only",
   facts: [
@@ -181,7 +181,7 @@ const classmate: CaseStudy = {
     },
     {
       id: "role", nav: "My role", eyebrow: "My role", title: "Most of the app, half of the backend.",
-      paragraphs: ["I built most of the app’s screens and logic and co-built the Spring Boot backend with a teammate. This is what each of us did, from the commit history."],
+      paragraphs: ["I built most of the app’s screens and logic and co-built the Spring Boot backend with Maxwell (GitHub: Kobimcs). This is what each of us did, from the commit history."],
       credits: [
         { who: "My part", did: [
           "Most of the app’s screens, and all of its data and offline services",
@@ -192,7 +192,7 @@ const classmate: CaseStudy = {
           "Assignment and timetable documents (upload and download)",
           "Login rate limiting and an audit log of admin actions",
         ] },
-        { who: "My teammate’s part", did: [
+        { who: "Maxwell (GitHub: Kobimcs)", did: [
           "Set up the Spring Boot project and the first JWT register and login",
           "The first announcement, timetable, assignment and exam-venue APIs",
           "The Dockerfile for deployment and some early screens",

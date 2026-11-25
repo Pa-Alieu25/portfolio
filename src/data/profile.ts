@@ -85,7 +85,7 @@ export const resume = {
     { label: "Mobile & frontend", text: "React Native/Expo, React, Next.js, JavaScript/TypeScript, offline sync" },
     { label: "Backend & data", text: "PHP/Laravel/Filament, Java/Spring Boot, Node.js/Express, REST APIs, MySQL, PostgreSQL/PostGIS, SQLite, Firebase" },
     { label: "Tools", text: "Docker, Git/GitHub, GitHub Actions CI, code review" },
-    { label: "Foundations", text: "Python, C++, nmap, Wireshark, system hardening" },
+    { label: "Foundations", text: "nmap, Wireshark, system hardening" },
   ],
   experience: {
     company: profile.experience.company,
@@ -105,7 +105,7 @@ export const resume = {
       name: "KNUST ClassMate",
       role: "Group project - built most of the app, co-built the backend",
       stack: "React Native/Expo, TypeScript, Java/Spring Boot, Spring Security/JWT, PostgreSQL",
-      summary: "Co-built the Spring Boot backend with a teammate and built most of the app: role-based access with JWT (student-only registration, admin-promoted course reps), offline cache and exam-venue search, CSV/XLS/XLSX score uploads, documents, push notifications and an audit log. Payments are demo only.",
+      summary: "Co-built the Spring Boot backend with Maxwell (GitHub: Kobimcs) and built most of the app: role-based access with JWT (student-only registration, admin-promoted course reps), offline cache and exam-venue search, CSV/XLS/XLSX score uploads, documents, push notifications and an audit log. Payments are demo only.",
     },
     {
       name: "ReportIt Gambia",
