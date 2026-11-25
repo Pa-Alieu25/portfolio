@@ -1,6 +1,12 @@
 import type { MetadataRoute } from "next";
-import { profile } from "@/data/profile";
+import { caseStudyOrder } from "@/data/case-studies";
+import { site } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return profile.siteUrl ? [{ url: profile.siteUrl, changeFrequency: "monthly", priority: 1 }] : [];
+  if (!site.url) return [];
+  return ["", "/about", "/cv", ...caseStudyOrder.map(slug => `/work/${slug}`)].map(path => ({
+    url: `${site.url}${path}`,
+    changeFrequency: "monthly",
+    priority: path === "" ? 1 : 0.8,
+  }));
 }

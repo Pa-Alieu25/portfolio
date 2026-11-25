@@ -11,6 +11,7 @@ const allowedGitHubUrls = new Set([
   "https://github.com/Pa-Alieu25",
   "https://github.com/Pa-Alieu25/mobile-project",
   "https://github.com/Pa-Alieu25/ReportIt",
+  "https://github.com/Pa-Alieu25/portfolio",
 ]);
 
 function files(directory) {
@@ -35,7 +36,8 @@ export function checkPublicContent() {
       const content = readFileSync(path, "utf8");
       const githubUrls = content.match(/https?:\/\/github\.com\/[^\s"'<>`]+/gi) ?? [];
       if (githubUrls.some(url => !allowedGitHubUrls.has(url))) errors.push(`${name}: GitHub link outside the public allowlist`);
-      if (/href\s*[=:]\s*["'](?:#|\/cv|[^"']*\.pdf)["']/i.test(content.replaceAll(`"${approvedCv.href}"`, ""))) errors.push(`${name}: placeholder or premature CV link`);
+      // The /cv page is live, so links to it are allowed; empty "#" links and unapproved PDFs are not.
+      if (/href\s*[=:]\s*["'](?:#|[^"']*\.pdf)["']/i.test(content.replaceAll(`"${approvedCv.href}"`, ""))) errors.push(`${name}: placeholder link or unapproved PDF link`);
       // Public launch has no telephone contact or project credentials.
       if (/tel:|\+220[\s().-]*\d|(?:api[_-]?key|password|secret)\s*[=:]\s*["'][^"']{8,}["']/i.test(content)) errors.push(`${name}: possible private contact or credential`);
     }
