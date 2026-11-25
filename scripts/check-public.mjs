@@ -10,6 +10,7 @@ const sourceExtensions = /\.(?:tsx?|jsx?|json|md|html|svg|css|txt|xml)$/i;
 const allowedGitHubUrls = new Set([
   "https://github.com/Pa-Alieu25",
   "https://github.com/Pa-Alieu25/mobile-project",
+  "https://github.com/Pa-Alieu25/ReportIt",
 ]);
 
 function files(directory) {

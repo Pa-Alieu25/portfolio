@@ -127,7 +127,7 @@ export const profile = {
         "The original implementation includes real-time report lists, onboarding, report-detail views, photo uploads through Cloudinary, and maps using Leaflet/OpenStreetMap.",
         "Localisation work includes Gambian copy, map framing, local-government areas and report categories. Not yet launched publicly.",
       ],
-      links: [] as { label: string; href: string }[],
+      links: [{ label: "Source on GitHub", href: "https://github.com/Pa-Alieu25/ReportIt" }] as { label: string; href: string }[],
     },
   ],
   team: {
