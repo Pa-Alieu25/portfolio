@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { about } from "@/data/about";
 import { site } from "@/data/site";
-import { findMedia } from "@/lib/media";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: about.seo.title,
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const photo = findMedia(about.photo.file);
+  const photo = about.photo;
   return <main id="main">
     <section className="wrap about-hero">
       <span className="eyebrow">{about.eyebrow}</span>
       <h1>{about.title}</h1>
       <div className="about-intro">
         <div>{about.intro.map(text => <p key={text}>{text}</p>)}</div>
-        {photo && <img src={photo.src} alt={about.photo.alt} width={photo.width} height={photo.height} />}
+        <Image className="portrait" src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 720px) 160px, 320px" unoptimized priority />
       </div>
     </section>
 

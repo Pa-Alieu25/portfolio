@@ -46,10 +46,10 @@ const fleetops: CaseStudy = {
   name: "FleetOps",
   kind: "Professional experience · NICK TC-SCAN (Gambia) Ltd",
   lede: "The fleet system I built for NICK TC-SCAN during my internship: a driver app that records trips by GPS even with mobile data off, and a web admin where HR, Finance and management run trips, fuel and maintenance.",
-  seoDescription: "FleetOps: the fleet-management system Pa Alieu Njie built as the only developer during his internship at NICK TC-SCAN in The Gambia. Offline-first Expo driver app, Laravel and Filament admin, MySQL.",
+  seoDescription: "FleetOps: the fleet-management system Pa Alieu Njie designed and built on his own during his internship at NICK TC-SCAN in The Gambia. Offline-first Expo driver app, Laravel and Filament admin, MySQL.",
   status: "rollout",
   facts: [
-    { label: "Role", value: "Software Development Intern, only developer" },
+    { label: "Role", value: "Software Development Intern; designed and built it on my own" },
     { label: "Timeline", value: "Sep–Oct 2026; maintaining it part-time since" },
     { label: "Worked with", value: "My supervisor, HR, Finance, IT and drivers" },
     { label: "Stack", value: "Laravel 12, Filament 4, Expo, MySQL 8.4, SQLite" },
@@ -69,9 +69,9 @@ const fleetops: CaseStudy = {
       ],
     },
     {
-      id: "role", nav: "My role", eyebrow: "My role", title: "Only developer, close to the people using it.",
+      id: "role", nav: "My role", eyebrow: "My role", title: "Designed and built it on my own, close to the people using it.",
       paragraphs: [
-        "I was the only developer. My supervisor let me talk directly to anyone I needed, so I worked closely with HR, Finance, the IT team and the drivers. On 30 September I rode along with a driver to see how trips really happen.",
+        "I designed and built FleetOps on my own. My supervisor let me talk directly to anyone I needed, so I worked closely with HR, Finance, the IT team and the drivers. On 30 September I rode along with a driver to see how trips really happen.",
         "I showed my progress to management every Friday, about five times. After the 25 September review they asked for motorbike tracking, HR notifications, approved routes and a picture menu for drivers who can’t read English well. They gave me the company logo and colours. Later we agreed to let drivers pick a vehicle for each trip and to merge the Fleet Manager role into HR.",
         "The IT team gave me access to the group’s SMS gateway and is now putting the system live on the company server.",
       ],

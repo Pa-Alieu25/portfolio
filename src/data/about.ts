@@ -8,8 +8,7 @@ export const about = {
   },
   eyebrow: "About",
   title: "From Latrikunda German to KNUST.",
-  /** Optional portrait, shown only if the file exists under public/. */
-  photo: { file: "about/portrait", alt: "Portrait of Pa Alieu Njie" },
+  photo: profile.portrait,
   intro: [
     "I’m from Latrikunda German in The Gambia. I got into programming when I enrolled in Computer Science at KNUST in January 2025, as a Mastercard Foundation Scholar, and I’m in my third year now.",
     "Since then I’ve built software for real problems at home and in Ghana: a fleet system for a company in The Gambia, a class app for KNUST students, and apps for reporting local problems and booking rides. I want to keep working in software engineering and cybersecurity, and I’m open to remote roles.",

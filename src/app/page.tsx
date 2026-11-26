@@ -1,5 +1,7 @@
 import { site, type Evidence } from "@/data/site";
 import { Status } from "@/components/status";
+import Image from "next/image";
+import { profile } from "@/data/profile";
 
 function Proof({ items, prefix }: { items: readonly Evidence[]; prefix?: string }) {
   return <span className="proof">
@@ -14,13 +16,18 @@ export default function Home() {
   const { hero, problems, experience, work, skills, aboutTeaser, contact, ui } = site;
   return <main id="main">
     <section className="wrap hero" aria-labelledby="hero-title">
-      <span className="eyebrow">{hero.eyebrow}</span>
-      <h1 id="hero-title">{hero.lead} <em>{hero.accent}</em></h1>
-      <p className="intro">{hero.intro}</p>
-      <div className="actions">
-        <a className="btn btn-primary" href={hero.primary.href}>{hero.primary.label}</a>
-        {site.cvPdf && <a className="btn" href={site.cvPdf} download>{ui.downloadCv}</a>}
-        <a className="btn" href={`mailto:${site.email}`}>{ui.emailMe}</a>
+      <div className="hero-lead">
+        <div className="hero-copy">
+          <span className="eyebrow">{hero.eyebrow}</span>
+          <h1 id="hero-title">{hero.lead} <em>{hero.accent}</em></h1>
+          <p className="intro">{hero.intro}</p>
+          <div className="actions">
+            <a className="btn btn-primary" href={hero.primary.href}>{hero.primary.label}</a>
+            {site.cvPdf && <a className="btn" href={site.cvPdf} download>{ui.downloadCv}</a>}
+            <a className="btn" href={`mailto:${site.email}`}>{ui.emailMe}</a>
+          </div>
+        </div>
+      <Image className="portrait hero-portrait" src={profile.portrait.src} alt={profile.portrait.alt} width={profile.portrait.width} height={profile.portrait.height} sizes="(max-width: 720px) 160px, (max-width: 1024px) 240px, 320px" unoptimized priority />
       </div>
       <div className="problems">
         <h2 className="eyebrow">{problems.label}</h2>

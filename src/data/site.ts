@@ -79,7 +79,7 @@ export const site = {
     eyebrow: "Software engineer · From The Gambia, studying in Kumasi, Ghana",
     lead: "I build mobile apps and the systems behind them,",
     accent: "for how people in The Gambia and Ghana actually work.",
-    intro: "I’m a third-year Computer Science student at KNUST. On my internship at NICK TC-SCAN I was the only developer on FleetOps: a driver app that keeps working with mobile data off, and an admin system for HR and Finance. I still maintain it for the company. I’m looking for remote software engineering roles, with a growing focus on security.",
+    intro: "I’m a third-year Computer Science student at KNUST. On my internship at NICK TC-SCAN I designed and built FleetOps on my own: a driver app that keeps working with mobile data off, and an admin system for HR and Finance. I still maintain it for the company. I’m looking for remote software engineering roles, with a growing focus on security.",
     primary: { label: "See my work", href: "/#work" },
   },
 
@@ -98,7 +98,7 @@ export const site = {
     role: "Software Development Intern · Sep–Oct 2026",
     text: "I built the company’s fleet system on my own: trips, fuel and maintenance, from riding along with a driver to handing it over to the IT team. Since the internship I keep maintaining it and adding features, part-time and remotely.",
     facts: [
-      { title: "Only developer", text: "Worked directly with HR, Finance, IT and drivers" },
+      { title: "Designed and built it on my own", text: "Worked directly with HR, Finance, IT and drivers" },
       { title: "Weekly reviews", text: "Showed management my progress every Friday" },
       { title: "Offline-first", text: "Trips record by GPS with mobile data off" },
       { title: "Handed over", text: "Server testing approved in Nov 2026; rollout under way" },
@@ -149,6 +149,9 @@ export const site = {
         { name: "Git · GitHub · code review", proof: [evidence.historyverse, evidence.taksigambia] },
         { name: "GitHub Actions CI", proof: [evidence.taksigambia, evidence.historyverse] },
         { name: "Docker", proof: [evidence.taksigambia] },
+      ] },
+      { name: "Foundations", items: [
+        { name: "C++ (coursework)", proof: [] },
       ] },
       { name: "Security", items: [
         { name: "Roles, policies and server-side rules", proof: [evidence.fleetops, evidence.classmate, evidence.reportit] },

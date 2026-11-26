@@ -7,6 +7,7 @@ const coursework = ["Data Structures & Algorithms", "Operations Research", "Huma
 
 export const profile = {
   name: "Pa Alieu Njie",
+  portrait: { src: "/images/pa-alieu-njie.webp", alt: "Pa Alieu Njie", width: 720, height: 720 },
   contact: {
     email: "paalieunjie22@gmail.com",
     github: "https://github.com/Pa-Alieu25",
@@ -59,7 +60,7 @@ export const resume = {
   documentTitle: "Pa Alieu Njie - CV",
   introduction: [
     "Software engineer building mobile apps and the systems behind them.",
-    "Only developer on FleetOps during a NICK TC-SCAN internship; built most of KNUST ClassMate and co-built its backend.",
+    "I designed and built FleetOps on my own during a NICK TC-SCAN internship; I built most of KNUST ClassMate and co-built its backend.",
     "Open to remote backend, frontend and mobile roles, with a growing focus on cybersecurity.",
   ],
   labels: {
@@ -85,7 +86,7 @@ export const resume = {
     { label: "Mobile & frontend", text: "React Native/Expo, React, Next.js, JavaScript/TypeScript, offline sync" },
     { label: "Backend & data", text: "PHP/Laravel/Filament, Java/Spring Boot, Node.js/Express, REST APIs, MySQL, PostgreSQL/PostGIS, SQLite, Firebase" },
     { label: "Tools", text: "Docker, Git/GitHub, GitHub Actions CI, code review" },
-    { label: "Foundations", text: "nmap, Wireshark, system hardening" },
+    { label: "Foundations", text: "C++ (coursework), nmap, Wireshark, system hardening" },
   ],
   experience: {
     company: profile.experience.company,
@@ -94,7 +95,7 @@ export const resume = {
     dates: "Sep 2026 - Oct 2026",
     context: "Port operations services at the Port of Banjul.",
     bullets: [
-      "Only developer on FleetOps: an offline-first Expo driver app with background GPS and a SQLite upload queue, and a Laravel/Filament admin on MySQL for HR, Finance and management.",
+      "Designed and built FleetOps on my own: an offline-first Expo driver app with background GPS and a SQLite upload queue, and a Laravel/Filament admin on MySQL for HR, Finance and management.",
       "Built trip tracking, finance-approved fuel requests with cash/coupon payouts, date/mileage maintenance reminders, reports and email/SMS/push alerts; picture buttons let drivers with limited English log trips without typing.",
       "Rode along with a driver to study real trips, showed progress to management in weekly reviews, and handed the system to the company's IT team; rollout under way.",
       "Continue to maintain FleetOps and add features part-time and remotely (2026 - present).",
