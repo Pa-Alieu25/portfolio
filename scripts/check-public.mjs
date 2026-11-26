@@ -5,11 +5,13 @@ import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 // Phase 4: the only approved public PDF, pinned to the text-verified export.
-const approvedCv = { path: join("public", "Pa_Alieu_Njie_CV.pdf"), href: "/Pa_Alieu_Njie_CV.pdf", sha256: "5560b66ec5a0f2583eaacb94bf098f1eee0e201165b4a7e94b161031c9e54665" };
+const approvedCv = { path: join("public", "Pa_Alieu_Njie_CV.pdf"), href: "/Pa_Alieu_Njie_CV.pdf", sha256: "61dde214d772b64160fd9bed944d67dd0d190ef2afdac244e899ed8d0c16bf6f" };
 const sourceExtensions = /\.(?:tsx?|jsx?|json|md|html|svg|css|txt|xml)$/i;
 const allowedGitHubUrls = new Set([
   "https://github.com/Pa-Alieu25",
   "https://github.com/Pa-Alieu25/mobile-project",
+  "https://github.com/Pa-Alieu25/ReportIt",
+  "https://github.com/Pa-Alieu25/portfolio",
 ]);
 
 function files(directory) {
@@ -34,7 +36,8 @@ export function checkPublicContent() {
       const content = readFileSync(path, "utf8");
       const githubUrls = content.match(/https?:\/\/github\.com\/[^\s"'<>`]+/gi) ?? [];
       if (githubUrls.some(url => !allowedGitHubUrls.has(url))) errors.push(`${name}: GitHub link outside the public allowlist`);
-      if (/href\s*[=:]\s*["'](?:#|\/cv|[^"']*\.pdf)["']/i.test(content.replaceAll(`"${approvedCv.href}"`, ""))) errors.push(`${name}: placeholder or premature CV link`);
+      // The /cv page is live, so links to it are allowed; empty "#" links and unapproved PDFs are not.
+      if (/href\s*[=:]\s*["'](?:#|[^"']*\.pdf)["']/i.test(content.replaceAll(`"${approvedCv.href}"`, ""))) errors.push(`${name}: placeholder link or unapproved PDF link`);
       // Public launch has no telephone contact or project credentials.
       if (/tel:|\+220[\s().-]*\d|(?:api[_-]?key|password|secret)\s*[=:]\s*["'][^"']{8,}["']/i.test(content)) errors.push(`${name}: possible private contact or credential`);
     }
