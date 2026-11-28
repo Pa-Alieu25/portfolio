@@ -77,10 +77,10 @@ export const site = {
 
   hero: {
     eyebrow: "Software engineer · From The Gambia, studying in Kumasi, Ghana",
-    lead: "I build mobile apps and the systems behind them,",
-    accent: "for how people in The Gambia and Ghana actually work.",
-    intro: "I’m a third-year Computer Science student at KNUST. On my internship at NICK TC-SCAN I designed and built FleetOps on my own: a driver app that keeps working with mobile data off, and an admin system for HR and Finance. I still maintain it for the company. I’m looking for remote software engineering roles, with a growing focus on security.",
-    primary: { label: "See my work", href: "/#work" },
+    lead: "I build mobile apps",
+    accent: "and backends.",
+    intro: "Software engineer and third-year Computer Science student at KNUST, from The Gambia. Open to remote roles in mobile and backend development.",
+    primary: { label: "Read the FleetOps case study", href: "/work/fleetops" },
   },
 
   problems: {
@@ -96,37 +96,86 @@ export const site = {
     eyebrow: "Professional experience",
     title: "FleetOps at NICK TC-SCAN, The Gambia",
     role: "Software Development Intern · Sep–Oct 2026",
-    text: "I built the company’s fleet system on my own: trips, fuel and maintenance, from riding along with a driver to handing it over to the IT team. Since the internship I keep maintaining it and adding features, part-time and remotely.",
+    text: "I independently developed FleetOps during my internship, working with HR, Finance, IT and drivers to understand operational requirements. The system covers trips, fuel and maintenance; I continue maintaining it part-time and remotely.",
     facts: [
-      { title: "Designed and built it on my own", text: "Worked directly with HR, Finance, IT and drivers" },
-      { title: "Weekly reviews", text: "Showed management my progress every Friday" },
-      { title: "Offline-first", text: "Trips record by GPS with mobile data off" },
-      { title: "Handed over", text: "Server testing approved in Nov 2026; rollout under way" },
-    ],
+  {
+    "title": "Driver app",
+    "text": "Background GPS with a SQLite queue for offline trip uploads"
+  },
+  {
+    "title": "Office admin",
+    "text": "Laravel/Filament with roles and approvals for HR and Finance"
+  },
+  {
+    "title": "Delivery",
+    "text": "Weekly reviews and handover to the company’s IT team"
+  },
+  {
+    "title": "Current status",
+    "text": "Server testing approved in Nov 2026; rollout and maintenance continue"
+  }
+],
   },
 
   work: {
     eyebrow: "Projects",
-    title: "Built, being built, and planned. Labelled honestly.",
+    title: "Selected work",
     projects: [
-      { slug: "classmate", name: "KNUST ClassMate", meta: "Group project · Jun–Jul 2026", text: "Timetables, assignments, exam venues and scores for students and course reps. I built most of the app and co-built the Spring Boot backend with Maxwell (GitHub: Kobimcs).", status: "completed" },
-      { slug: "reportit", name: "ReportIt Gambia", meta: "Started as a two-person project · now mine", text: "Report a pothole, a leak or flooding with a photo and location, then follow it until it’s fixed.", status: "prototype" },
-      { slug: "taksigambia", name: "TaksiGambia", meta: "Solo · Jul 2026–now", text: "Ride-hailing built around landmarks, cash and a commission drivers can see. Foundations and safety checks are built; ride features come next.", status: "development" },
-    ] satisfies { slug: ProjectSlug; name: string; meta: string; text: string; status: StatusKind }[],
+  {
+    "slug": "classmate",
+    "name": "KNUST ClassMate",
+    "meta": "Group project · Jun–Jul 2026",
+    "text": "Built most of KNUST ClassMate's React Native app and co-built its Spring Boot backend with Maxwell (GitHub: Kobimcs). Timetables, assignments, offline exam-venue search and bulk score uploads. Payments are a demonstration with no live service connected.",
+    "status": "completed"
+  }
+],
     others: [
-      { id: "historyverse", name: "Historyverse", meta: "Team lead of eight · KNUST course project · Nov 2026–now", status: "early", text: "An interactive history website. I run the team: issues, reviews, CI and weekly updates to our lecturer. The React scaffold and data layer, written by a teammate, are in place; features are in progress. Final presentation in January 2027." },
-      { id: "fa2bee", name: "FA2BEE", meta: "Client work for a Gambian business owner", status: "development", text: "A website for a multi-service business in The Gambia (laundry, cleaning and more). I wrote the first version’s Node.js/Express backend, which is still being built. A Next.js and PostgreSQL rebuild with server-side pricing is at the scaffold stage." },
-      { id: "amam", name: "Am Am Gambia", meta: "Solo · Nov 2026", status: "early", text: "Helps households and landlords find a trusted tradesperson nearby, see their past work and ask for a quote. The Expo prototype searches made-up worker profiles by trade and area.", statusText: "Early prototype · sample data" },
-    ] satisfies { id: string; name: string; meta: string; status: StatusKind; text: string; statusText?: string }[],
+  {
+    "id": "reportit",
+    "slug": "reportit",
+    "name": "ReportIt Gambia",
+    "meta": "Originally a two-person KNUST project · now owner",
+    "status": "prototype",
+    "text": "I built ReportIt Ghana’s app and am adapting it for The Gambia: photo/GPS reports, a map and admin status updates. Authority routing and public launch are planned."
+  },
+  {
+    "id": "taksigambia",
+    "slug": "taksigambia",
+    "name": "TaksiGambia",
+    "meta": "Solo · Jul 2026–now",
+    "status": "development",
+    "statusText": "Foundations built · sign-in in development",
+    "text": "Built app shells, API health checks, PostGIS migrations, a generated client, shared money/ride-status code and CI. Booking, matching, fares and payments are planned."
+  },
+  {
+    "id": "fa2bee",
+    "name": "FA2BEE",
+    "meta": "Client work · The Gambia",
+    "status": "development",
+    "text": "Developing a multi-service business website. I built the first version’s Express backend; the Next.js/PostgreSQL rebuild with server-side pricing is at the scaffold stage."
+  },
+  {
+    "id": "amam",
+    "name": "Am Am Gambia",
+    "meta": "Solo · Nov 2026",
+    "status": "early",
+    "statusText": "Early prototype · sample data",
+    "text": "An app for households and landlords to find tradespeople and request quotes. The current Expo prototype searches sample worker profiles by trade and area."
+  }
+],
   },
 
   skills: {
-    eyebrow: "Skills, with evidence",
-    title: "Each skill links to where I used it.",
+    title: "Skills",
     groups: [
       { name: "Mobile", items: [
         { name: "React Native · Expo", proof: [evidence.fleetops, evidence.classmate, evidence.reportit, evidence.taksigambia] },
         { name: "Offline sync (SQLite, AsyncStorage)", proof: [evidence.fleetops, evidence.classmate] },
+      ] },
+      { name: "Frontend", items: [
+        { name: "TypeScript · JavaScript", proof: [evidence.fleetops, evidence.classmate, evidence.taksigambia] },
+        { name: "React", proof: [evidence.taksigambia] },
+        { name: "Next.js", proof: [evidence.site, evidence.fa2bee] },
       ] },
       { name: "Backend", items: [
         { name: "PHP · Laravel · Filament", proof: [evidence.fleetops] },
@@ -140,24 +189,18 @@ export const site = {
         { name: "SQLite", proof: [evidence.fleetops] },
         { name: "Firebase (Auth, Firestore)", proof: [evidence.reportit] },
       ] },
-      { name: "Frontend", items: [
-        { name: "TypeScript · JavaScript", proof: [evidence.fleetops, evidence.classmate, evidence.taksigambia] },
-        { name: "React", proof: [evidence.taksigambia] },
-        { name: "Next.js", proof: [evidence.site, evidence.fa2bee] },
-      ] },
-      { name: "Tools", items: [
+      { name: "Engineering tools", items: [
         { name: "Git · GitHub · code review", proof: [evidence.historyverse, evidence.taksigambia] },
         { name: "GitHub Actions CI", proof: [evidence.taksigambia, evidence.historyverse] },
         { name: "Docker", proof: [evidence.taksigambia] },
       ] },
-      { name: "Foundations", items: [
-        { name: "C++ (coursework)", proof: [] },
-      ] },
       { name: "Security", items: [
-        { name: "Roles, policies and server-side rules", proof: [evidence.fleetops, evidence.classmate, evidence.reportit] },
+        { name: "Server-side roles and permissions", proof: [evidence.fleetops, evidence.classmate, evidence.reportit] },
         { name: "Private files, signed URLs, rate limits", proof: [evidence.fleetops, evidence.classmate] },
       ] },
+      { name: "Foundations", items: [{ name: "C++ (coursework)", proof: [] }] },
     ] satisfies { name: string; items: { name: string; proof: Evidence[] }[] }[],
+    learning: { title: "Currently learning", items: ["nmap", "Wireshark", "System hardening"], note: "Cybersecurity is an additional interest. Cisco Introduction to Cybersecurity is in progress; the Google certificate is planned." },
   },
 
   aboutTeaser: {
@@ -169,7 +212,7 @@ export const site = {
 
   contact: {
     eyebrow: "Contact",
-    title: "Let’s talk about a role or a project.",
-    text: "I’m open to remote software engineering roles across mobile, backend and frontend, with a growing focus on cybersecurity.",
+    title: "Contact",
+    text: "Open to remote software engineering roles, with an emphasis on mobile and backend development.",
   },
 } as const;

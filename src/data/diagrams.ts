@@ -299,7 +299,7 @@ const reportitLifecycle: GraphDiagram = {
     { id: "r", x: 245, y: 30, w: 190, h: 56, title: "Under Review", sub: "admin" },
     { id: "i", x: 480, y: 30, w: 190, h: 56, title: "In Progress", sub: "admin + note" },
     { id: "d", x: 715, y: 30, w: 215, h: 56, title: "Resolved", sub: "reporter notified", kind: "hot" },
-    { id: "x", x: 245, y: 124, w: 425, h: 50, title: "Rejected", sub: "admin gives a reason the reporter can read" },
+    { id: "x", x: 245, y: 124, w: 425, h: 50, title: "Rejected", sub: "admin gives a reason the reporter can read", phone: { sub: "admin gives reason" } },
   ],
   edges: [{ d: "M200 58 H243" }, { d: "M435 58 H478" }, { d: "M670 58 H713" }, { d: "M105 86 V149 H243" }, { d: "M340 86 V122" }, { d: "M575 86 V122" }],
   phone: { rows: [{ ids: ["p"] }, { ids: ["r"] }, { ids: ["i"] }, { ids: ["d", "x"] }], links: [["p", "r"], ["r", "i"], ["i", "d"], ["i", "x"]], note: "Any open report can also be rejected with a reason." },

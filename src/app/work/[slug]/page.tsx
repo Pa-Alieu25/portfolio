@@ -39,7 +39,7 @@ export default async function CaseStudyPage({ params }: Props) {
   const body = (section: Section) => {
     const screens = availableScreens(section);
     return <>
-      <span className="eyebrow">{section.eyebrow}</span>
+
       <h2>{section.title}</h2>
       <div className="text">
         {section.paragraphs?.map(text => <p key={text}>{text}</p>)}
@@ -57,9 +57,9 @@ export default async function CaseStudyPage({ params }: Props) {
         <span>{screen.caption}</span>
       </li>)}</ul>}
       {section.status && <div className="state">
-        <div><Status kind="completed" text="Works now" /><ul>{section.status.works.map(item => <li key={item}>{item}</li>)}</ul></div>
-        {section.status.building && <div><Status kind="development" text="In progress" /><ul>{section.status.building.map(item => <li key={item}>{item}</li>)}</ul></div>}
-        {section.status.notBuilt && <div><Status kind="designed" text="Not built yet" /><ul>{section.status.notBuilt.map(item => <li key={item}>{item}</li>)}</ul></div>}
+        <div><Status kind="completed" text="Implemented" /><ul>{section.status.works.map(item => <li key={item}>{item}</li>)}</ul></div>
+        {section.status.building && <div><Status kind="development" text="In development" /><ul>{section.status.building.map(item => <li key={item}>{item}</li>)}</ul></div>}
+        {section.status.notBuilt && <div><Status kind="designed" text="Planned" /><ul>{section.status.notBuilt.map(item => <li key={item}>{item}</li>)}</ul></div>}
       </div>}
     </>;
   };
