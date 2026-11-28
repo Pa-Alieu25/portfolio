@@ -10,9 +10,9 @@ export const about = {
   title: "From Latrikunda German to KNUST.",
   photo: profile.portrait,
   intro: [
-    "I’m from Latrikunda German in The Gambia. I got into programming when I enrolled in Computer Science at KNUST in January 2025, as a Mastercard Foundation Scholar, and I’m in my third year now.",
-    "Since then I’ve built software for real problems at home and in Ghana: a fleet system for a company in The Gambia, a class app for KNUST students, and apps for reporting local problems and booking rides. I want to keep working in software engineering and cybersecurity, and I’m open to remote roles.",
-  ],
+  "I’m from Latrikunda German in The Gambia and joined KNUST in January 2025 as a Mastercard Foundation Scholar. I’m now a third-year Computer Science student.",
+  "I build mobile apps and backends, including FleetOps for NICK TC-SCAN and KNUST ClassMate. I’m open to remote software engineering roles; cybersecurity is an additional area of study."
+],
   sections: [
     {
       title: "Basketball",
@@ -24,8 +24,8 @@ export const about = {
     },
   ],
   leadership: [
+    { title: "Project Manager / team lead", organization: "Historyverse, CSM 399 group project, KNUST", dates: "Nov 2026 – present", text: "Set up GitHub issues, protected branches, required reviews, code owners, a contributing guide and CI for an eight-person CSM 399 team. Review pull requests and send weekly lecturer updates. The React scaffold and data layer are in place; features are in progress." },
     ...profile.leadership.map(role => ({ title: role.title, organization: role.organization, dates: role.dates, text: role.description })),
-    { title: "Project Manager / team lead", organization: "Historyverse, CSM 399 group project, KNUST", dates: "Nov 2026 – present", text: "I ran the kickoff, broke the work into GitHub issues and gave each of the eight members tasks for their role. I set up protected branches, required reviews, code owners, CI and a contributing guide, review every pull request, and send weekly updates to our lecturer." },
   ],
   achievements: profile.achievements.items.map(item => ({ title: item.title, detail: item.detail })),
   education: profile.about.education,
@@ -34,7 +34,7 @@ export const about = {
   languages: profile.about.languages,
   security: {
     title: "Cybersecurity learning",
-    text: "Security is where I want to grow. In my projects I keep roles and money decisions on the server, store evidence files privately and limit login attempts. Outside them, I’m learning nmap, Wireshark and system hardening.",
+    text: "My projects use server-side permissions, private file storage and login rate limits. Separately, I’m learning nmap, Wireshark and system hardening.",
     certifications: profile.security.certifications,
   },
 } as const;

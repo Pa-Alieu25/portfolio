@@ -55,14 +55,14 @@ export const profile = {
 
 /** CV wording: concise versions of the website's case studies. */
 export const resume = {
-  title: "Software Engineer / Full-Stack Developer",
+  title: "Software Engineer",
   location: "Kumasi, Ghana · Open to remote",
   documentTitle: "Pa Alieu Njie - CV",
   introduction: [
-    "Software engineer building mobile apps and the systems behind them.",
-    "I designed and built FleetOps on my own during a NICK TC-SCAN internship; I built most of KNUST ClassMate and co-built its backend.",
-    "Open to remote backend, frontend and mobile roles, with a growing focus on cybersecurity.",
-  ],
+  "Software engineer focused on mobile and backend development.",
+  "Independently developed FleetOps during a NICK TC-SCAN internship. Built most of KNUST ClassMate's React Native app and co-built its Spring Boot backend with Maxwell (GitHub: Kobimcs).",
+  "Third-year Computer Science student at KNUST, open to remote software engineering roles."
+],
   labels: {
     profile: "Profile",
     skills: "Skills",
@@ -83,11 +83,35 @@ export const resume = {
     github: "github.com/Pa-Alieu25",
   },
   skillGroups: [
-    { label: "Mobile & frontend", text: "React Native/Expo, React, Next.js, JavaScript/TypeScript, offline sync" },
-    { label: "Backend & data", text: "PHP/Laravel/Filament, Java/Spring Boot, Node.js/Express, REST APIs, MySQL, PostgreSQL/PostGIS, SQLite, Firebase" },
-    { label: "Tools", text: "Docker, Git/GitHub, GitHub Actions CI, code review" },
-    { label: "Foundations", text: "C++ (coursework), nmap, Wireshark, system hardening" },
-  ],
+  {
+    "label": "Mobile",
+    "text": "React Native/Expo, offline sync"
+  },
+  {
+    "label": "Frontend",
+    "text": "React, Next.js, JavaScript/TypeScript"
+  },
+  {
+    "label": "Backend",
+    "text": "PHP/Laravel/Filament, Java/Spring Boot, Node.js/Express, REST APIs"
+  },
+  {
+    "label": "Databases",
+    "text": "MySQL, PostgreSQL/PostGIS, SQLite, Firebase"
+  },
+  {
+    "label": "Engineering tools",
+    "text": "Docker, Git/GitHub, GitHub Actions CI, code review"
+  },
+  {
+    "label": "Security",
+    "text": "Project work: server-side roles, private files, signed URLs, rate limiting. Learning: nmap, Wireshark, system hardening."
+  },
+  {
+    "label": "Foundations",
+    "text": "C++ (coursework)"
+  }
+],
   experience: {
     company: profile.experience.company,
     role: profile.experience.role,
@@ -95,24 +119,24 @@ export const resume = {
     dates: "Sep 2026 - Oct 2026",
     context: "Port operations services at the Port of Banjul.",
     bullets: [
-      "Designed and built FleetOps on my own: an offline-first Expo driver app with background GPS and a SQLite upload queue, and a Laravel/Filament admin on MySQL for HR, Finance and management.",
-      "Built trip tracking, finance-approved fuel requests with cash/coupon payouts, date/mileage maintenance reminders, reports and email/SMS/push alerts; picture buttons let drivers with limited English log trips without typing.",
-      "Rode along with a driver to study real trips, showed progress to management in weekly reviews, and handed the system to the company's IT team; rollout under way.",
-      "Continue to maintain FleetOps and add features part-time and remotely (2026 - present).",
-    ],
+  "Independently developed FleetOps: an offline-first Expo app with background GPS and a SQLite upload queue, plus a Laravel/Filament admin on MySQL.",
+  "Built trip tracking, finance-approved fuel requests with cash/coupon payouts, date/mileage maintenance reminders, reports and email/SMS/push alerts. Picture buttons support drivers with limited English.",
+  "Worked with HR, Finance, IT and drivers, observing workflows to define operational requirements. Reviewed progress weekly and handed the system to IT; rollout is under way.",
+  "Continue maintenance and feature development part-time and remotely (2026 - present)."
+],
   },
   featured: [
     {
       name: "KNUST ClassMate",
-      role: "Group project - built most of the app, co-built the backend",
+      role: "Group project - mobile app and backend",
       stack: "React Native/Expo, TypeScript, Java/Spring Boot, Spring Security/JWT, PostgreSQL",
-      summary: "Co-built the Spring Boot backend with Maxwell (GitHub: Kobimcs) and built most of the app: role-based access with JWT (student-only registration, admin-promoted course reps), offline cache and exam-venue search, CSV/XLS/XLSX score uploads, documents, push notifications and an audit log. Payments are demo only.",
+      summary: "Built most of KNUST ClassMate's React Native app and co-built its Spring Boot backend with Maxwell (GitHub: Kobimcs). Implemented role-based access, offline cache, exam-venue search, bulk score uploads, documents, notifications and audit logging. Payments are a demonstration with no live payment service connected.",
     },
     {
       name: "ReportIt Gambia",
       role: "Working prototype - now owner",
       stack: "React Native/Expo, TypeScript, Firebase Auth/Firestore, Cloudinary, Leaflet",
-      summary: "Built the app for a two-person KNUST mini-project (ReportIt Ghana), then took the project over: photo/GPS reports, map, status timeline, admin triage, Firestore security rules and status notifications. Adapting it for The Gambia; routing reports to authorities is next. Not launched publicly.",
+      summary: "Built the app for the two-person ReportIt Ghana student project, then took ownership and began adapting it for The Gambia. Implemented photo/GPS reports, a map, admin triage, status updates and Firestore security rules. Authority routing is planned; not publicly launched.",
     },
   ],
   inProgress: [
@@ -120,26 +144,26 @@ export const resume = {
       name: "TaksiGambia",
       role: "Solo developer - in development",
       stack: "Expo/TypeScript, React/Vite, Java/Spring Boot, PostgreSQL/PostGIS, Docker",
-      summary: "Ride-hailing for The Gambia built around landmarks, cash and a visible commission. Built: app shells, an API with startup checks, PostGIS, a generated typed client, tested money and ride-status code, CI. Booking, matching and payments are designed, not built.",
+      summary: "Built the app shells, Spring Boot API health checks, PostGIS migrations, generated API client, shared money/ride-status code and CI. Sign-in is in development. Booking, matching, fares, cash commission and payments are planned.",
     },
     {
       name: "FA2BEE",
       role: "Client work - in development",
       stack: "Node.js/Express; Next.js, PostgreSQL/Prisma (rebuild)",
-      summary: "Website for a multi-service business in The Gambia. Wrote the first version's Express backend, still being built; a Next.js rebuild with server-side pricing is at the scaffold stage.",
+      summary: "Developing a website for a Gambian multi-service business. Built the first version’s Express backend; it remains in development. The Next.js/PostgreSQL rebuild with server-side pricing is at the scaffold stage.",
     },
     {
       name: "Am Am Gambia",
       role: "Creator - early prototype",
       stack: "Expo",
-      summary: "Helps households and landlords find trusted tradespeople and ask for quotes. Early prototype with sample data: search made-up worker profiles by trade and area.",
+      summary: "An app for households and landlords to find tradespeople and request quotes. The current Expo prototype searches sample worker profiles by trade and area.",
     },
   ],
   leadership: [
     {
       title: "Project Manager / team lead - Historyverse",
       dates: "Nov 2026 - present",
-      summary: "Eight-person CSM 399 group project. Ran the kickoff, split the work into GitHub issues, set up protected branches, required reviews, code owners and CI; review every pull request. React scaffold and data layer in place.",
+      summary: "Set up GitHub issues, protected branches, required reviews, code owners, a contributing guide and CI for an eight-person CSM 399 team. Review pull requests and send weekly lecturer updates.",
     },
     {
       title: "Vice President - NAGSTUG",
